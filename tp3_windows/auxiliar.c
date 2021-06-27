@@ -7,7 +7,6 @@
 static int getInt(int* pResultado);
 static int getFloat(float* pResultado);
 static int getString(char* cadena, int longitud);
-static int verificarFlotante(char* cadena);
 static int getStringNum(char* cadena, int longitud);
 
 /**
@@ -58,7 +57,7 @@ static int getFloat(float* pResultado)
 
     if(pResultado != NULL)
     {
-    	if(getString(bufferAux,sizeof(bufferAux))==0 && verificarFlotante(bufferAux)== 0)
+    	if(getString(bufferAux,sizeof(bufferAux))==0 && aux_verificarFlotante(bufferAux)== 0)
     	{
 			*pResultado = atof(bufferAux);
 			retorno = 0;
@@ -105,7 +104,7 @@ static int getString(char* cadena, int longitud)
  * \return Retorna 0 si se corrobora que el numero sea flotante y -1 si no lo es
  *
  */
-static int verificarFlotante(char* cadena)
+int aux_verificarFlotante(char* cadena)
 {
 	int retorno = -1;
 	int auxPuntos = 0;

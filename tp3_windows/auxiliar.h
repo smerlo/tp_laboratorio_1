@@ -7,6 +7,7 @@ int aux_getNumeroInt(int* pResultado, char* mensaje, char* mensajeError, int min
 int aux_getString(char* pResultado, int longitud,char* mensaje, char* mensajeError, int reintentos);
 int aux_getStringNum(char* pResultado, int longitud,char* mensaje, char* mensajeError, int reintentos);
 int aux_verificarNumerica(char* cadena, int limite);
+int aux_verificarFlotante(char* cadena);
 
 
 #endif /* AUXILIAR_H_ */
