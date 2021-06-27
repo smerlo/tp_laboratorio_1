@@ -1,0 +1,3 @@
+int menu();
+
+int menuModify();
