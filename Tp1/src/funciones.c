@@ -19,7 +19,7 @@
 int func_CalcularSuma(float* resultado, float primerOperando, float segundoOperando)
 {
 	int retorno = -1;
-	int suma;
+	float suma;
 	if(resultado != NULL)
 	{
 		suma = primerOperando + segundoOperando;
@@ -39,7 +39,7 @@ int func_CalcularSuma(float* resultado, float primerOperando, float segundoOpera
 int func_CalcularResta(float* resultado, float primerOperando, float segundoOperando)
 {
 	int retorno = -1;
-	int resta;
+	float resta;
 	if(resultado != NULL)
 	{
 		resta = primerOperando - segundoOperando;
@@ -60,7 +60,7 @@ int func_CalcularResta(float* resultado, float primerOperando, float segundoOper
 int func_CalcularDivision(float* resultado, float primerOperando, float segundoOperando)
 {
 	int retorno = -1;
-	int division;
+	float division;
 	if(resultado != NULL)
 	{
 		if(segundoOperando != 0)
@@ -89,7 +89,7 @@ int func_CalcularDivision(float* resultado, float primerOperando, float segundoO
 int func_CalcularMultiplicacion(float* resultado, float primerOperando, float segundoOperando)
 {
 	int retorno = -1;
-	int multiplicacion;
+	float multiplicacion;
 	if(resultado != NULL)
 	{
 		multiplicacion = primerOperando * segundoOperando;
